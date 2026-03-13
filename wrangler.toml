@@ -1,0 +1,17 @@
+name = "kiwoom-proxy"
+main = "kiwoom-worker.js"
+compatibility_date = "2024-01-01"
+
+# Cron 트리거: 매 1분마다 실행
+[triggers]
+crons = ["* * * * *"]
+
+# KV 네임스페이스 (Cloudflare 대시보드에서 생성 후 id 입력)
+[[kv_namespaces]]
+binding = "TRADE_KV"
+id = "db0d4ffecf494ccc8e3755e2d3781d85"
+
+# Secrets는 wrangler CLI로 설정:
+# wrangler secret put KIWOOM_APP_KEY
+# wrangler secret put KIWOOM_APP_SECRET
+# wrangler secret put KIWOOM_ACC_NO
