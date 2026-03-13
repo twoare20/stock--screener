@@ -14,4 +14,5 @@ id = "db0d4ffecf494ccc8e3755e2d3781d85"
 # Secrets는 wrangler CLI로 설정:
 # wrangler secret put KIWOOM_APP_KEY
 # wrangler secret put KIWOOM_APP_SECRET
-# wrangler secret put KIWOOM_ACC_NO
+# wrangler secret put KIWOOM_ACC_NO 
+
